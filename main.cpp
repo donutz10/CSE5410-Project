@@ -1,9 +1,9 @@
 // Arduino-Ardumoto obstacle avoiding robot
 #include <NewPing.h>
-#define TRIGGER_PIN 7      // Arduino pin tied to trigger pin on the ultrasonic sensor.
-#define ECHO_PIN 6         // Arduino pin tied to echo pin on the ultrasonic sensor.
-#define MAX_DISTANCE 200   // Maximum distance we want to ping for (in centimeters). Maximum
-#define LED_OBSTACLE_PIN 8 // LED PIN FOR OBSTACLE
+#define TRIGGER_PIN 7    // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN 6       // Arduino pin tied to echo pin on the ultrasonic sensor.
+#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum
+//#define LED_OBSTACLE_PIN 8 // LED PIN FOR OBSTACLE
 // sensor distance is rated at 400-1000cm.
 
 #define CW 0
@@ -24,8 +24,8 @@ NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and
 
 void setup()
 {
-    setupArdumoto();                   // Set all pins as outputs
-    pinMode(LED_OBSTACLE_PIN, OUTPUT); // setup the LED for obstacle
+    setupArdumoto(); // Set all pins as outputs
+    // pinMode(LED_OBSTACLE_PIN, OUTPUT); // setup the LED for obstacle
 }
 void loop()
 {
@@ -38,7 +38,7 @@ void loop()
     }
     else if (uS / US_ROUNDTRIP_CM < 50)
     {
-        analogWrite(LED_OBSTACLE_PIN, HIGH); // set LED to High if obstacle is ahead
+        // analogWrite(LED_OBSTACLE_PIN, HIGH); // set LED to High if obstacle is ahead
         turnRight(255);
         delay(500);
     }
