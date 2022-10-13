@@ -39,6 +39,12 @@ void loop()
     else if (uS / US_ROUNDTRIP_CM < 50)
     {
         // analogWrite(LED_OBSTACLE_PIN, HIGH); // set LED to High if obstacle is ahead
+        // delay(500);
+        // analogWrite(LEDOBSTACLE_PIN, LOW);
+        // delay(500);
+        // analogWrite(LED_OBSTACLE_PIN, HIGH);
+        // delay(500);
+        // analogWrite(LED_OBSTACLE_PIN, LOW);
         turnRight(255);
         delay(500);
     }
