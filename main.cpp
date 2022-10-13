@@ -1,9 +1,9 @@
 // Arduino-Ardumoto obstacle avoiding robot
 #include <NewPing.h>
-#define TRIGGER_PIN 7    // Arduino pin tied to trigger pin on the ultrasonic sensor.
-#define ECHO_PIN 6       // Arduino pin tied to echo pin on the ultrasonic sensor.
-#define MAX_DISTANCE 200 // Maximum distance we want to ping for (in centimeters). Maximum
-#define LED_OBSTACLE_PIN 8
+#define TRIGGER_PIN 7      // Arduino pin tied to trigger pin on the ultrasonic sensor.
+#define ECHO_PIN 6         // Arduino pin tied to echo pin on the ultrasonic sensor.
+#define MAX_DISTANCE 200   // Maximum distance we want to ping for (in centimeters). Maximum
+#define LED_OBSTACLE_PIN 8 // LED PIN FOR OBSTACLE
 // sensor distance is rated at 400-1000cm.
 
 #define CW 0
