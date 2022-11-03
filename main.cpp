@@ -76,7 +76,7 @@ void turnRight(byte spd)
 // new function by nawaf - reverse
 void reverse(byte motor)
 {
-    driveArdumoto(motor, CCW, spd); // needed to be tested
+    driveArdumoto(motor, CCW, 255); // needed to be tested
 }
 // stopArdumoto makes a motor stop
 void stopArdumoto(byte motor)
